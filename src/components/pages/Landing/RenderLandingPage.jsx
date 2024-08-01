@@ -13,7 +13,7 @@ import { Button } from 'antd';
 import { useHistory } from 'react-router-dom';
 // for the purposes of testing PageNav
 // import PageNav from '../../common/PageNav';
-import PageNav from '../../common/PageNav'
+import PageNav from '../../common/PageNav';
 
 function RenderLandingPage(props) {
   const scrollToTop = () => {
@@ -60,6 +60,13 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
+        <Button
+          type="default"
+          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+          onClick={() => history.push('/download')}
+        >
+          Download the Data
+        </Button>
       </div>
 
       <div className="middle-section">
@@ -78,9 +85,40 @@ function RenderLandingPage(props) {
           </h3>
         </div>
       </div>
-      <div>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
+      <div className="bottom-section">
+        <div className="insights-section">
+          <h2>Systemic Disparity Insights</h2>
+          <div className="insight-cards">
+            <div className="insight-card">
+              <h3>36%</h3>
+              <p>
+                By the end of the Trump administration, the average asylum office grant rate had fallen 36 percent 
+                from an average of 44 percent in fiscal year 2016 to 28 percent in fiscal year 2020.
+              </p>
+            </div>
+            <div className="insight-card">
+              <h3>5%</h3>
+              <p>
+                The New York asylum office grant rate droppeed to 5 percent in fiscal year 2020.
+              </p>
+            </div>
+            <div className="insight-card">
+              <h3>6x Lower</h3>
+              <p>
+                Between fiscal year 2017 and 2020, the New York asylum office's average grant rate was six times 
+                lower than the San Francisco asylum office.
+              </p>
+            </div>
+          </div>
+          <Button type="link" onClick={() => history.push('/insights')}>
+            Read More
+          </Button>
+        </div>
+        
         {/* <div className="bottom-section">*/}
+        <PageNav bigScreen={true} />
+
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
         </p>
