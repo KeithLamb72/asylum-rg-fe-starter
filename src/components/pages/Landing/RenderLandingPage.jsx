@@ -3,6 +3,9 @@ import React from 'react';
 // import GrantRatesByOfficeImg from '../../../styles/Images/bar-graph-no-text.png';
 // import GrantRatesByNationalityImg from '../../../styles/Images/pie-chart-no-text.png';
 // import GrantRatesOverTimeImg from '../../../styles/Images/line-graph-no-text.png';
+import GrantRatesByOfficeImg from '../../../styles/Images/bar-graph-no-text.png';
+import GrantRatesByNationalityImg from '../../../styles/Images/pie-chart-no-text.png';
+import GrantRatesOverTimeImg from '../../../styles/Images/line-graph-no-text.png';
 
 import HrfPhoto from '../../../styles/Images/paper-stack.jpg';
 import '../../../styles/RenderLandingPage.less';
@@ -10,6 +13,8 @@ import { Button } from 'antd';
 import { useHistory } from 'react-router-dom';
 // for the purposes of testing PageNav
 // import PageNav from '../../common/PageNav';
+import PageNav from '../../common/PageNav'
+
 function RenderLandingPage(props) {
   const scrollToTop = () => {
     document.body.scrollTop = 0;
@@ -32,7 +37,21 @@ function RenderLandingPage(props) {
       </div>
 
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
-      {/* <div className="graphs-section"> */}
+      <div className="graphs-section">
+        <div className="graph-card">
+          <h2>Search Grant Rates By Office</h2>
+          <img src={GrantRatesByOfficeImg} alt="Grant Rates By Office" />
+        </div>
+        <div className="graph-card">
+          <h2>Search Grant Rates By Nationality</h2>
+          <img src={GrantRatesByNationalityImg} alt="Grant Rates By Nationality" />
+        </div>
+        <div className="graph-card">
+          <h2>Search Grant Rates Over Time</h2>
+          <img src={GrantRatesOverTimeImg} alt="Grant Rates Over Time" />
+        </div>
+      </div>
+      {/* Graphs Section: Add code here for the graphs section for your first ticket */}
       <div className="view-more-data-btn-container">
         <Button
           type="default"
