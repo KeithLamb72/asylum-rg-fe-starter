@@ -112,6 +112,54 @@
 }
 
 // .bottom-section {
+.bottom-section {
+    padding: 80px 5%; /* Add padding to give space around the section */
+    background-color: var(----secondary-color-manatee); /* Ensure the background is white */
+
+    .insights-section {
+        text-align: center;
+
+        h2 {
+            font-family: 'beatrice regular'; /* Use Beatrice Regular for the heading */
+            font-size: 3rem; /* Larger size for the main heading */
+            color: var(--secondary-color-dark-slate-gray); /* Use the main color */
+            margin-bottom: 155px; /* Space between heading and cards */
+            margin-top: 155px;
+        }
+
+        .insight-cards {
+            display: flex;
+            justify-content: space-between; /* Space the cards evenly across the section */
+            align-items: flex-start; /* Align cards to the top */
+            gap: 100px; /* Space between the cards */
+            padding: 0 3%;
+        }
+
+        .insight-card {
+            background-color: var(----secondary-color-manatee); /* Card background color */
+            padding: 20px; /* Padding inside the cards */
+            border-radius: 10px;
+            width: 100%; 
+            max-width: 400px; /* Maximum width for cards */
+            text-align: center; /* Center the text within the cards */
+
+            h3 {
+                font-family: 'acumin'; /* Use Acumin for the percentage/statistic */
+                font-size: 2.8rem; /* Large font size for emphasis */
+                color: var(--secondary-color-dark-slate-gray); /* Use the main color */
+                margin-bottom: 15px; /* Space between the h3 and paragraph */
+            }
+
+            p {
+                font-family: 'acumin'; /* Use Acumin for the paragraph text */
+                font-size: 1.1rem; /* Slightly larger font size for readability */
+                color: var(--secondary-color-nickel); /* Use the secondary color for text */
+                line-height: 1.6; /* Improve readability with line height */
+                margin: 0;
+            }
+        }
+    }
+}
 
 //      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION// }
 
