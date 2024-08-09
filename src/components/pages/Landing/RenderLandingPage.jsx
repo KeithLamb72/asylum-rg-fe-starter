@@ -39,16 +39,16 @@ function RenderLandingPage(props) {
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
       <div className="graphs-section">
         <div className="graph-card">
-          <h2>Search Grant Rates By Office</h2>
           <img src={GrantRatesByOfficeImg} alt="Grant Rates By Office" />
+          <h2>Search Grant Rates By Office</h2>
         </div>
         <div className="graph-card">
-          <h2>Search Grant Rates By Nationality</h2>
           <img src={GrantRatesByNationalityImg} alt="Grant Rates By Nationality" />
+          <h2>Search Grant Rates By Nationality</h2>
         </div>
         <div className="graph-card">
-          <h2>Search Grant Rates Over Time</h2>
           <img src={GrantRatesOverTimeImg} alt="Grant Rates Over Time" />
+          <h2>Search Grant Rates Over Time</h2>
         </div>
       </div>
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
@@ -117,11 +117,13 @@ function RenderLandingPage(props) {
         </div>
         
         {/* <div className="bottom-section">*/}
-        <PageNav bigScreen={true} />
+        
 
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
         </p>
+        
+        <PageNav bigScreen={true} />
       </div>
     </div>
   );
