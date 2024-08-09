@@ -113,6 +113,7 @@ function RenderLandingPage(props) {
           </div>
           <Button type="link" onClick={() => history.push('/insights')}>
             Read More
+            
           </Button>
         </div>
         

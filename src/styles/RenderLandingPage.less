@@ -114,29 +114,29 @@
 // .bottom-section {
 .bottom-section {
     padding: 80px 5%; /* Add padding to give space around the section */
-    background-color: var(----secondary-color-manatee); /* Ensure the background is white */
+    background-color: var(----secondary-color-manatee);
 
     .insights-section {
         text-align: center;
 
         h2 {
-            font-family: 'beatrice regular'; /* Use Beatrice Regular for the heading */
-            font-size: 3rem; /* Larger size for the main heading */
-            color: var(--secondary-color-dark-slate-gray); /* Use the main color */
+            font-family: 'beatrice regular'; 
+            font-size: 3rem; 
+            color: var(--secondary-color-dark-slate-gray); 
             margin-bottom: 155px; /* Space between heading and cards */
             margin-top: 155px;
         }
 
         .insight-cards {
             display: flex;
-            justify-content: space-between; /* Space the cards evenly across the section */
+            justify-content: space-between; 
             align-items: flex-start; /* Align cards to the top */
             gap: 100px; /* Space between the cards */
             padding: 0 3%;
         }
 
         .insight-card {
-            background-color: var(----secondary-color-manatee); /* Card background color */
+            background-color: var(----secondary-color-manatee); 
             padding: 20px; /* Padding inside the cards */
             border-radius: 10px;
             width: 100%; 
@@ -158,6 +158,17 @@
                 margin: 0;
             }
         }
+        .ant-btn-link {
+            background-color: @main-color; /* Button background color */
+            color: @white; /* Button text color */
+            padding: 8px 18px; /* Padding for the button */
+            text-align: center; /* Center the text */
+            display: inline-block;
+            margin-top: 100px; /* Space above the button */
+            margin-bottom: 50px;
+            border: none;
+            line-height: normal;
+        }
     }
 }
 
@@ -169,6 +180,7 @@
     cursor: pointer;
     color: black;
     margin: 5% auto;
+    text-align: center;
 }
 
 .ant-space-align-center {
