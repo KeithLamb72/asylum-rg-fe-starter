@@ -13,7 +13,7 @@ const LogoutButton = () => {
         <span
         style={{ color: '#E2F0F7', 
                  cursor: 'pointer', 
-                paddingLeft: '75px' }}
+                paddingLeft: '45px' }}
         onClick={handleLogout} 
         >
             Log Out
