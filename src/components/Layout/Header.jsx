@@ -3,8 +3,8 @@ import { Image } from 'antd';
 import { Link } from 'react-router-dom';
 import Logo from '../../styles/Images/WhiteLogo.png';
 import { colors } from '../../styles/data_vis_colors';
-import LogoutButton from '../pages/Profile/logout-button';
-import LoginButton from '../pages/Profile/login-button';
+import LogoutButton from '../../auth/logout-button';
+import LoginButton from '../../auth/login-button';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const { primary_accent_color } = colors;
@@ -16,8 +16,10 @@ function HeaderContent() {
       style={{
         display: 'flex',
         justifyContent: 'space-between',
+        alignItems: 'center',
         width: '100%',
         backgroundColor: primary_accent_color,
+        padding: '10px 20px'
       }}
     >
       <div className="hrf-logo">
@@ -26,7 +28,7 @@ function HeaderContent() {
         </a>
       </div>
       <div>
-        <Link to="/" style={{ color: '#E2F0F7', paddingLeft: '20px' }}>
+      <Link to="/" style={{ color: '#E2F0F7', paddingLeft: '20px' }}>
           Home
         </Link>
         <Link to="/graphs" style={{ color: '#E2F0F7', paddingLeft: '20px' }}>
@@ -43,8 +45,6 @@ function HeaderContent() {
           <LoginButton />
         )}
       </div>
-
-      
     </div>
   );
 }
